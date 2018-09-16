@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8">
+    <title>Verkefni 2 – Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Form</h1>
+      <form method="get" action="./form.html">
+        <fieldset>
+          <legend>Notandi</legend>
+          <div>
+            <label for="name">Notandanafn:</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div>
+            <label for="email">Netfang:</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="password">Lykilorð:</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div>
+            <label for="password2">Lykilorð aftur:</label>
+            <input aria-describedby="passwordtext" type="password" name="password2" id="password2">
+            <span id="passwordtext" aria-hidden="true">Lykilorð verða að vera eins</span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Spurningar</legend>
+
+          <div>
+            <p>Kyn:</p>
+            <label>
+              <input type="radio" name="gender" value="kona"> Kona
+            </label>
+            <label>
+              <input type="radio" name="gender" value="karl"> Karl
+            </label>
+            <label>
+              <input type="radio" name="gender" value="annað"> Annað
+            </label>
+          </div>
+
+          <div>
+            <label for="age">Aldur:</label>
+            <select name="age" id="age">
+              <option>-Vinsamlegast veljið-</option>
+              <option>Yngri en 13 ára</option>
+              <option>13-20 ára</option>
+              <option>21-65 ára</option>
+              <option>Eldri en 65 ára</option>
+            </select>
+          </div>
+
+          <div>
+            <label>
+              <input type="checkbox" name="continue" checked> Senda afrit af notandaupplýsingum á netfang.
+            </label>
+          </div>
+
+          <div>
+            <label for="comments">Athugasemdir</label>
+            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+          </div>
+        </fieldset>
+
+        <button>Senda</button>
+      </form>
+    </main>
+
+    <hr>
+
+    <nav>
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="form.html"><strong>Form</strong></a></li>
+          <li><a href="table.html">Tafla</a></li>
+          <li><a href="text.html">Texti</a></li>
+        </ul>
+      </nav>
+  </body>
+</html>
